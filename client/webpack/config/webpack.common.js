@@ -9,7 +9,11 @@ export default () =>
   merge(
     {
       entry: [SRC_DIR],
+      resolve: {
+        extensions: [".js", ".ts", ".tsx", ".jsx"],
+      },
     },
     modules.setupHtml(),
-    modules.loadStyles(env)
+    modules.loadStyles(env),
+    modules.transpileCode()
   );
