@@ -5,3 +5,4 @@ export { ROOT_DIR };
 export const SRC_DIR = resolve(ROOT_DIR, "src");
 export const DIST_DIR = resolve(ROOT_DIR, "dist");
 export const BUILD_DIR = resolve(ROOT_DIR, "build");
+export const TEMPLATE_DIR = resolve(ROOT_DIR, "src/html");
