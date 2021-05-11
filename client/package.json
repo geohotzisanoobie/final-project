@@ -4,7 +4,8 @@
   "description": "final project for EPAM Systems",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "cross-env NODE_ENV=development node -r esm \"./node_modules/.bin/webpack\" --config=\"./webpack/config/webpack.dev.js\"",
+    "build": "cross-env NODE_ENV=production node -r esm \"./node_modules/.bin/webpack\" --config=\"./webpack/config/webpack.prod.js\""
   },
   "keywords": [
     "final",
