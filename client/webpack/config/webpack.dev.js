@@ -7,7 +7,7 @@ import { DIST_DIR } from "../utils/constants";
 export default () =>
   merge(getCommonConfig(), {
     output: {
-      filname: "[name].js",
+      filename: "[name].js",
       path: DIST_DIR,
     },
   });

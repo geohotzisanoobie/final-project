@@ -12,7 +12,7 @@ export default () =>
     target: "web",
     devtool: false,
     output: {
-      filname: "[name].[contenthash].js",
+      filename: "[name].[contenthash].js",
       path: BUILD_DIR,
     },
   });
