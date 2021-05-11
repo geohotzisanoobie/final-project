@@ -1,5 +1,7 @@
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
 
+import { ROOT_DIR } from "../../utils/constants";
+
 export const loadStyles = (env) => {
   const isDev = env === "development";
   return {
@@ -22,6 +24,14 @@ export const loadStyles = (env) => {
               loader: "css-loader",
               options: {
                 sourceMap: isDev ? true : false,
+              },
+            },
+            {
+              loader: "postcss-loader",
+              options: {
+                postcssOptions: {
+                  config: `${ROOT_DIR}/postcss.config.js`,
+                },
               },
             },
             {
