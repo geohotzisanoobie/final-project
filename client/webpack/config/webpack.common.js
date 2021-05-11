@@ -8,7 +8,9 @@ const env = process.env.NODE_ENV;
 export default () =>
   merge(
     {
-      entry: [SRC_DIR],
+      entry: {
+        main: [SRC_DIR],
+      },
       resolve: {
         extensions: [".js", ".ts", ".tsx", ".jsx"],
       },
