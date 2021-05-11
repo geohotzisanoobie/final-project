@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=development node -r esm ./node_modules/.bin/webpack serve --config=./webpack/config/webpack.dev.js --hot",
-    "build": "cross-env NODE_ENV=production node -r esm \"./node_modules/.bin/webpack\" --config=\"./webpack/config/webpack.prod.js\" && echo ‘/* /index.html 200’ | cat > docs/_redirects"
+    "build": "cross-env NODE_ENV=production node -r esm \"./node_modules/.bin/webpack\" --config=\"./webpack/config/webpack.prod.js\" && echo ‘/* /index.html 200’ | cat > build/_redirects"
   },
   "keywords": [
     "final",
