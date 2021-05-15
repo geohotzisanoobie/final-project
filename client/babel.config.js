@@ -13,6 +13,9 @@ export default (api) => {
           spec: true,
           loose: true,
           modules: false,
+          targets: {
+            esmodules: true,
+          },
         },
       ],
     ],

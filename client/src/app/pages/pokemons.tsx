@@ -1,3 +1,10 @@
 import React from "react";
+import { Pokemons as PokemonsList } from "../bus/pokemons";
 
-export const Pokemons = () => <h1>Pokemons Page</h1>;
+export const Pokemons = () => {
+  return (
+    <div>
+      <PokemonsList />
+    </div>
+  );
+};
